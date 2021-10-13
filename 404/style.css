@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+}
+
+.main-container {
+    height: 100vh;
+    background:#74F2CE;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-container-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.page-details{
+margin-top: 5rem;
+margin-left: 5rem;
+}
+
+.page-details h1{
+  font-size: 12rem;
+  color: #00ABAE;
+  line-height: 150px;
+}
+
+.page-details h3{
+  font-size: 2rem;
+  color: #00ABAE;
+  margin-left: 3.3rem;
+}
+
+.page-details p{
+  font-size: 1.1rem;
+  color: #00ABAE;
+  margin-left: 7rem;
+  margin-top: .5rem;
+}
+
+.page-details button{
+  padding: 9px 25px;
+  font-size: 1.2em;
+  background: #00ABAE;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #969797;
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
+
+.mountain-img{
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+.stopsignage-img{
+    position: absolute;
+    bottom:0;
+    right: 20%;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+

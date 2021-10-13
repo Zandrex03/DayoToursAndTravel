@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #e0f4ff;
+  --seconder-bg-color: ;
+  --main-header-color: #1c1c1c;
+  --primary-color: #00abae;
+  --secondary-color: #333333;
+  --primary-font: "Poppins", sans-serif;
+  --margin: 1rem;
+  --padding: 1rem;
+}
+
+
+footer {
+  background: #022526;
+  height: 62vh;
+  width: 100%;
+  color: white;
+  font-family: var(--primary-font);
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 85%;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+
+.footer-wrapper h6 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.footer-wrapper li {
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  color: #c8c8c8;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  background: var(--primary-color);
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.copyright-wrapper p {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.social-media-icons i {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin: 0 0.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-media-icons i:hover {
+ transform: scale(1.2);
+}
+
+.overlay-sidebar{
+  display: none;
+}
+
+
+@media screen and (max-width:758px){
+  footer {
+  height: 70vh;
+}
+}
+
+@media screen and (max-width:708px){
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+
+ footer {
+  height: 100%;
+}
+
+.copyright-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.copyright{
+  margin:1rem 0 ;
+}
+
+.dayo-email{
+  margin:1rem 0 ;
+}
+}
+
+@media screen and (max-width:425px){
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+}

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #e0f4ff;
+  --seconder-bg-color: ;
+  --main-header-color: #1c1c1c;
+  --primary-color: #00abae;
+  --secondary-color: #333333;
+  --primary-font: "Poppins", sans-serif;
+  --margin: 1rem;
+  --padding: 1rem;
+}
+
+.nav-container {
+  padding-bottom: 0.1rem;
+  background-color: var(--main-bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+  font-family: var(--primary-font);
+  box-shadow:  0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  height: 4rem;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-wrapper h1 {
+  /* font-family: 'Permanent Marker', cursive; */
+  /* font-family: 'Bangers', cursive; */
+  /* font-family: 'Sonsie One', cursive; */
+  font-family: "Kaushan Script", cursive;
+  color: var(--primary-color);
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+
+.nav {
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigations {
+  display: flex;
+  justify-content: center;
+}
+
+.ul {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+.book-btn {
+  padding: 9px 15px;
+  font-size: 1em;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 21px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+
+.book-btn:hover {
+  color: white;
+}
+
+.fa-user-circle {
+  font-size: 2.6rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: block;
+}
+
+#menu{
+  display: none;
+}
+
+
+
+@media screen and (max-width:711px){
+.navbar {
+  width: 95%;
+}
+
+.navigations{
+  display: none;
+}
+
+.call-to-action{
+  display: none;
+}
+
+#menu{
+  display: block;
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.overlay-sidebar{
+  display: block;
+  position: fixed;
+  top:-100vh ;
+  opacity: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #022526;
+  /* background: var(--primary-color); */
+  z-index: 100000;
+  padding: 20px 30px 30px 30px;
+  transition: 0.5s ease;
+}
+
+.overlay-sidebar.active{
+  top: 0;
+}
+
+.fa-times-circle{
+  font-size: 3rem;
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+.overlay-sidebar{
+  display: block;
+}
+
+.overlay-sidebar-content{
+  display:flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.ul-overlay{
+  text-align: center;
+}
+
+.ul-overlay li{
+  margin: 3rem 0;
+}
+
+.ul-overlay a{
+  font-size: 2.3rem;
+  color: #eeeeee;
+}
+
+
+.call-to-action-overlay{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-btn-overlay{
+  padding: 9px 15px;
+  font-size: 1.3em;
+  background:#eeeeee;
+  border: none;
+  border-radius: 25px;
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.user{
+  font-size: 4rem;
+  color: #eeeeee;
+  cursor: pointer;
+}
+}
